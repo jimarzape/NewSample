@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="blue-header"></div>
+    <center>
+        <img src="img/temp.png" class="templogo">
+        <br>
+        <input type="email" placeholder="Username" id="txtusername">
+        <br>
+        <input type="password" placeholder="Password" id="txtpassword">
+        <br>
+        <input type="button" value="Login" id="btnlogin">
+        <input type="button" value="Exit" id="btnexit">
+    </center>
+
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <script type="text/javascript">
+        $('#button1').click(function(){
+            var data = $('#txt').val();
+            $('#divs').prepend(data + "<br>");
+            $('#txt').val("");
+        });
+    </script>
+</body>
+</html>
